@@ -1,0 +1,85 @@
+.stopwatch {
+    font-size: 5rem;
+    display: flex;
+    color: white;
+    height: 80vh;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn {
+    font-size: 1.2rem;
+    margin: 0 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.startbtn-outline {
+    background: green;
+    color: white;
+    border: 2px solid green;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.startbtn-outline:hover {
+    background: transparent;
+    color: green;
+}
+
+.stopbtn-outline {
+    background: crimson;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.stopbtn-outline:hover {
+    background: transparent;
+    color: crimson;
+}
+
+.rsbtn-outline {
+    background: yellow;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid yellow;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.rsbtn-outline:hover {
+    background: transparent;
+    color: yellow;
+}
+
+@media only screen and (max-width: 500px) {
+    .stopwatch {
+        font-size: 3.5rem;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .stopwatch {
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .controls {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        font-size: 1rem;
+        margin: 10px;
+    }
+
+}
